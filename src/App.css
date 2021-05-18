@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/***************** LANDING PAGE *****************/
+:root {
+  --gray: #c0bcb5;
+  --white: #eeeeee;
+  --black: #1c2321;
+  --lightblue: rgb(128, 189, 255);
+  --green1: rgb(15, 132, 28);
+  --footer: rgb(25, 73, 64);
+  --niceBlue: rgb(31, 71, 60);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+*,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/***************** LANDING PAGE *****************/
+.mainPage {
+  height: 101vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green1);
+  position: relative;
+  top: -80px;
+  overflow: hidden;
+  min-height: 600px;
+}
+.mainPage a {
+  margin-top: 20px;
+}
+.overlayPicture {
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.mainPage h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+#firstButton {
+  padding: 10px;
+  width: 400px;
+  border-radius: 2%;
+  text-decoration: none;
+  color: white;
+  border: white solid 2px;
+  transition: 0.5s;
+  text-align: center;
+  margin-left: 40vw;
+  z-index: 2;
+  float: right;
+}
+#firstButton:hover {
+  background-color: white;
+  color: rgb(1, 165, 1);
+  transition: 0.5s;
+}
+.textTotal {
+  margin-top: 45vh;
+  margin-left: 40vw;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  #firstButton {
+    margin-left: 0;
+  }
+  .textTotal {
+    margin-left: 0;
+  }
+  .overlayPicture {
+    display: none;
+  }
+}
+
+.welcomeText {
+  color: white;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/************ PROJECTS PAGE ***************/
+
+.projects {
+  top: -90px;
+  text-align: center;
+  height: auto;
+  min-height: 850px;
+  width: 100%;
+  position: relative;
+  background-color: var(--footer) !important;
+  color: white !important;
+  overflow: hidden;
+}
+
+.projectButton {
+  background-color: transparent !important;
+  color: rgb(1, 165, 1) !important;
+  opacity: 0.8;
+  transition: 0.5s;
+  width: 80%;
+  align-self: center;
+  border: 2px solid rgb(1, 165, 1) !important;
+}
+
+.projectButton:hover {
+  background-color: var(--green1) !important;
+  color: white !important;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.projectImage {
+  height: auto;
+  width: 300px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.projectBreak {
+  width: 90%;
+}
+
+#githubButton {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.projectCard {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: transparent !important;
+  border: none !important;
+  transition: 0.5s;
+  opacity: 0.7;
+  align-self: center;
+}
+.projectCard:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .projects {
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .projects {
+    height: auto;
+  }
+}
+@media (max-height: 650px) {
+  .projects {
+    height: auto;
+  }
+  .mainPage {
+    height: 110vh;
+  }
+}
+@media (max-height: 400px) {
+  .projects {
+    height: 200vh;
+  }
+}
+
+/************* CONTACT PAGE **************/
+
+.contactPage {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(36, 82, 69, 0.8);
+  position: relative;
+  margin-top: 453px;
+}
+
+.contactPage h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#social-buttons {
+  display: inline-block;
+  margin-top: 50px;
+}
+.fab {
+  text-decoration: none !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+  text-align: center;
+  margin-right: 11px;
+  padding: 15px;
+}
+.fab:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+  text-decoration: none !important;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+  text-decoration: none !important;
+}
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+.fa-github {
+  background: #f1502f;
+  color: white;
+}
+.fa-codepen {
+  background: black;
+  color: white;
+}
+
+#paperPlane {
+  width: 350px;
+  height: 50px;
+  border: 2px solid rgb(1, 165, 1);
+  border-radius: 0%;
+  padding: 10px;
+  color: rgb(1, 165, 1) !important;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  margin-top: 0;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+#paperPlane:hover {
+  background-color: rgb(1, 165, 1);
+  color: white !important;
+  opacity: 1;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+#email-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/************ FOOTER **************/
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  height: 100px;
+  background-color: var(--black);
+  color: grey;
+  font-size: 0.8rem;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.footerText {
+  margin: 0;
+  padding: 0;
+}
+
+/************ MOBILE **************/
+@media only screen and (max-device-width: 480px) {
+  .overlayPicture {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    left: -1000px;
+  }
+  .projects {
+    height: 58vh;
+  }
+  .aboutSection {
+    margin-top: 200px;
+  }
+  .contactPage {
+    margin-top: 500px;
+  }
+  .navBar {
+    font-size: 1.5rem;
+  }
+  .projectCard {
+    zoom: 1.4;
+  }
+}

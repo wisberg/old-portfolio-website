@@ -1,0 +1,127 @@
+/*************** ABOUT PAGE ***************/
+
+:root {
+  --niceBlue: rgb(36, 82, 69);
+}
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  height: 565px;
+  background-color: transparent;
+  position: relative;
+  top: -12vh;
+}
+
+.aboutSection {
+  height: 500px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/*************FIRST SECTION*************/
+
+.pictureAndBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  min-height: 200px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.aboutPicture {
+  max-height: 350px;
+  max-width: 350px;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.skillBox {
+  width: 90%;
+  background-color: transparent;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1017px) {
+  .skillBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-color: transparent;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .techIcons {
+    margin-bottom: 30px;
+  }
+  .aboutPicture {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 900px) {
+  .techIcons {
+    margin-right: 45px;
+  }
+}
+.techIcons {
+  margin-right: 60px;
+}
+.techIcons:hover {
+  opacity: 1 !important;
+  color: black;
+}
+/****************COLLAGE SECTION********************/
+.collage {
+  position: relative;
+  max-width: auto;
+  min-width: 100vw;
+  height: 650px;
+  opacity: 0.15;
+  overflow: hidden;
+  text-align: center;
+}
+.collageSection {
+  background-color: var(--niceBlue);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  top: 300px;
+}
+.aboutMe {
+  color: white;
+  justify-self: center;
+  text-align: center;
+  text-shadow: 1px 1px gray;
+  position: absolute;
+  text-align: center;
+}
+.aboutMe h1 {
+  margin-bottom: 50px;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.aboutMe p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 98%;
+}
+
+@media (max-width: 900px) {
+  .aboutMe h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .aboutMe p {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    width: 90%;
+  }
+}

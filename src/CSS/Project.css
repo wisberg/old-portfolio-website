@@ -1,0 +1,79 @@
+/************ PROJECTS PAGE ***************/
+
+.projects {
+  top: -90px;
+  text-align: center;
+  height: 300vh;
+  min-height: 850px;
+  width: 100%;
+  position: relative;
+  background-color: var(--footer) !important;
+  color: white !important;
+  overflow: hidden;
+}
+
+.projectButton {
+  background-color: transparent !important;
+  color: rgb(1, 165, 1) !important;
+  opacity: 0.8;
+  transition: 0.5s;
+  width: 80%;
+  align-self: center;
+  border: 2px solid rgb(1, 165, 1) !important;
+}
+
+.projectButton:hover {
+  background-color: var(--green1) !important;
+  color: white !important;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.projectImage {
+  height: 200px;
+  width: auto;
+  border-radius: 30%;
+  border: 0.5px solid grey;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.projectCard {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: transparent !important;
+  border: none !important;
+  transition: 0.5s;
+  opacity: 0.7;
+  position: relative;
+}
+.projectCard:hover {
+  padding: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .projects {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .projects {
+    height: 250vh;
+  }
+}
+@media (max-height: 650px) {
+  .projects {
+    height: 140vh;
+  }
+  .mainPage {
+    height: 110vh;
+  }
+}
+@media (max-height: 400px) {
+  .projects {
+    height: 200vh;
+  }
+}

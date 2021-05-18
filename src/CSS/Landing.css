@@ -1,0 +1,69 @@
+/***************** LANDING PAGE *****************/
+.mainPage {
+  height: 101vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green1);
+  position: relative;
+  top: -80px;
+  overflow: hidden;
+  min-height: 600px;
+}
+.mainPage a {
+  margin-top: 20px;
+}
+.overlayPicture {
+  max-width: auto;
+  min-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.mainPage h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+#firstButton {
+  padding: 10px;
+  width: 400px;
+  border-radius: 2%;
+  text-decoration: none;
+  color: white;
+  border: white solid 2px;
+  transition: 0.5s;
+  text-align: center;
+  margin-left: 40vw;
+  z-index: 2;
+  float: right;
+}
+#firstButton:hover {
+  background-color: white;
+  color: rgb(1, 165, 1);
+  transition: 0.5s;
+}
+.textTotal {
+  margin-top: 45vh;
+  margin-left: 40vw;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  #firstButton {
+    margin-left: 0;
+  }
+  .textTotal {
+    margin-left: 0;
+  }
+}
+
+.welcomeText {
+  color: white;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 30px;
+}

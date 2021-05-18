@@ -1,0 +1,51 @@
+/****************NAVBAR************/
+
+:root {
+  --gray: #c0bcb5;
+  --white: #eeeeee;
+  --black: #1c2321;
+  --blue: #83dfe9;
+  --purple: #846075;
+  --red: #af5d63;
+  --green: rbg(96, 108, 56);
+}
+
+.navBar {
+  height: 80px;
+  background-color: transparent;
+}
+.navBar:hover {
+  opacity: 1 !important;
+  transition: 0.5s;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+}
+.navLink {
+  color: white !important;
+}
+.navLinks {
+  color: white !important;
+}
+
+.navLink:hover {
+  border-bottom: 1px solid white;
+  color: white !important;
+}
+
+@media (max-width: 900px) {
+  .navLink {
+    color: gray !important;
+    opacity: 1;
+  }
+  .navLinks {
+    color: gray !important;
+    opacity: 1;
+  }
+  .navLink:hover {
+    border-bottom: 1px solid lightgray;
+    color: lightgray !important;
+  }
+}

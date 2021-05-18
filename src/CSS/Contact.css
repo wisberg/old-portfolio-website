@@ -1,0 +1,84 @@
+/************* CONTACT PAGE **************/
+
+.contactPage {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(36, 82, 69, 0.8);
+  position: relative;
+  margin-top: 453px;
+}
+
+.contactPage h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#social-buttons {
+  display: inline-block;
+  margin-top: 50px;
+}
+.fab {
+  text-decoration: none !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+  text-align: center;
+  margin-right: 11px;
+  padding: 15px;
+}
+.fab:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+  text-decoration: none !important;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+  text-decoration: none !important;
+}
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+.fa-github {
+  background: #f1502f;
+  color: white;
+}
+.fa-codepen {
+  background: black;
+  color: white;
+}
+
+#paperPlane {
+  width: 350px;
+  height: 50px;
+  border: 2px solid rgb(1, 165, 1);
+  border-radius: 0%;
+  padding: 10px;
+  color: rgb(1, 165, 1) !important;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  margin-top: 0;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+#paperPlane:hover {
+  background-color: rgb(1, 165, 1);
+  color: white !important;
+  opacity: 1;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+#email-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/***************** LANDING PAGE *****************/
+:root {
+  --gray: #c0bcb5;
+  --white: #eeeeee;
+  --black: #1c2321;
+  --lightblue: rgb(128, 189, 255);
+  --green1: rgb(15, 132, 28);
+  --footer: rgb(29, 63, 56);
+  --niceBlue: rgb(36, 82, 69);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+*,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/************ FOOTER **************/
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  height: 100px;
+  background-color: var(--black);
+  color: grey;
+  font-size: 0.8rem;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.footerText {
+  margin: 0;
+  padding: 0;
+}
+
+/************ MOBILE **************/
+@media only screen and (max-device-width: 480px) {
+  .overlayPicture {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    left: -1000px;
+  }
+  .projects {
+    height: 58vh;
+  }
+  .aboutSection {
+    margin-top: 200px;
+  }
+  .contactPage {
+    margin-top: 500px;
+  }
+  .navBar {
+    font-size: 1.5rem;
+  }
+  .projectCard {
+    zoom: 1.4;
+  }
+}
